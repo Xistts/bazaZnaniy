@@ -1,0 +1,104 @@
+site_name: База знаний
+site_description: Документация по сервису Almaz-online
+site_author: Almaz-online
+
+theme:
+  name: material
+  language: ru
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  palette:
+    - scheme: default
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Включить тёмную тему
+    - scheme: slate
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Включить светлую тему
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+nav:
+  - Главная: index.md
+
+  - Мобильное приложение:
+      - Обзор: mobile/index.md
+      - Авторизация: mobile/login.md
+      - Двухфакторная авторизация: mobile/twofa.md
+      - Обновление приложения: mobile/update.md
+      - Безопасность: mobile/security.md
+
+  - Веб-приложение:
+      - 1. Введение: web/introduction.md
+
+      - 2. Вход в систему:
+          - Вход в систему: web/login/index.md
+          - Настройка входа в систему по коду из приложения: web/login/otp.md
+          - Частая ошибка: web/login/common-error.md
+
+      - 3. Настройка платежных точек: web/payment-points.md
+      - 4. Настройка платежного шлюза:
+          - Настройка платежного шлюза: web/payment-gateway/index.md
+          - Guid платежного шлюза: web/payment-gateway/payment-gateway-guid.md
+      - 5. Настройка доступа к счёту и установка лимитов: web/account-access.md
+      - 6. Создание пользователей: web/users.md
+      - 7. Права ролей: web/role-rights.md
+      - 8. Раздел меню Справочники: web/directories.md
+      - 9. Раздел меню Платежные документы: 
+          - Раздел меню Платежные документы: web/payment-documents/index.md
+          - Оформление документа: web/payment-documents/payment-document-create.md
+          - Формирование ПСА: web/payment-documents/payment-document-psa.md
+          - Оплата документа: web/payment-documents/payment-document-pay.md
+          - Загрузка документа XML: web/payment-documents/payment-document-xml.md
+          - Загрузка документа Excel: web/payment-documents/payment-document-excel.md
+          - Статусы платежа: web/payment-documents/payment-document-statuses.md
+          - Дублирование платежа: web/payment-documents/payment-document-duplicate.md
+          - Баланс: web/payment-documents/balance.md
+          - Обязательность полей: web/payment-documents/required-fields.md
+          - Ключ идемпотентности: web/payment-documents/idempotency-key.md
+      - Реестр организаций: web/org-registry.md
+      - Шлюзы: web/gateways.md
+
+  - API:
+      - Обзор: api/index.md
+      - Auth: api/auth.md
+      - Companies: api/companies.md
+      - Payments: api/payments.md
+      - Limits: api/limits.md
+
+  - FAQ: faq.md
+
+markdown_extensions:
+  - admonition
+  - meta
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
