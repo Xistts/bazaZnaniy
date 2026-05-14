@@ -31,34 +31,35 @@ theme:
     - content.tabs.link
     - toc.follow
 
+plugins:
+  - search
+  - glightbox
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  generator: false
+
 nav:
   - Главная: index.md
 
-  - Мобильное приложение:
-      - Обзор: mobile/index.md
-      - Авторизация: mobile/login.md
-      - Двухфакторная авторизация: mobile/twofa.md
-      - Обновление приложения: mobile/update.md
-      - Безопасность: mobile/security.md
-
   - Веб-приложение:
-      - 1. Введение: web/introduction.md
-
+      - 1. Введение: web/index.md
       - 2. Вход в систему:
-          - Вход в систему: web/login/index.md
+          - 2. Вход в систему: web/login/index.md
           - Настройка входа в систему по коду из приложения: web/login/otp.md
           - Частая ошибка: web/login/common-error.md
-
       - 3. Настройка платежных точек: web/payment-points.md
       - 4. Настройка платежного шлюза:
-          - Настройка платежного шлюза: web/payment-gateway/index.md
+          - 4. Настройка платежного шлюза: web/payment-gateway/index.md
           - Guid платежного шлюза: web/payment-gateway/payment-gateway-guid.md
       - 5. Настройка доступа к счёту и установка лимитов: web/account-access.md
       - 6. Создание пользователей: web/users.md
       - 7. Права ролей: web/role-rights.md
       - 8. Раздел меню Справочники: web/directories.md
       - 9. Раздел меню Платежные документы: 
-          - Раздел меню Платежные документы: web/payment-documents/index.md
+          - 9. Раздел меню Платежные документы: web/payment-documents/index.md
           - Оформление документа: web/payment-documents/payment-document-create.md
           - Формирование ПСА: web/payment-documents/payment-document-psa.md
           - Оплата документа: web/payment-documents/payment-document-pay.md
@@ -69,17 +70,61 @@ nav:
           - Баланс: web/payment-documents/balance.md
           - Обязательность полей: web/payment-documents/required-fields.md
           - Ключ идемпотентности: web/payment-documents/idempotency-key.md
-      - Реестр организаций: web/org-registry.md
-      - Шлюзы: web/gateways.md
+          - Подтверждение платежа: web/payment-documents/payment-confirmation.md
+      - 10. Онлайн-касса Атол: web/atol-cash-register.md
+      - 11. Информационная безопасность: web/information-security.md
+      - 12. Инструкция подключения двухфакторной аутентификации: web/two-factor-authentication.md
+
+  - Модуль 1С:
+      - Инструкция по установке и использованию: onec/index.md
+      - Общее описание: onec/description.md
+      - Установка модуля: onec/installation.md
+      - Установка в режиме Конфигуратор: onec/installation-configurator.md
+      - Настройка модуля: 
+          - Настройка модуля: onec/settings/index.md
+          - Упрощённый режим работы: onec/settings/simplified-mode.md
+          - Расширенный режим работы: onec/settings/extended-mode.md
+          - Интеграция онлайн-кассы Атол: onec/settings/atol-integration.md
+          - Загрузка документов из Алмаз-Онлайн: onec/settings/documents-loading-settings.md
+          - Соответствия номенклатуры: onec/settings/nomenclature-mapping.md
+          - Документы Оплата: onec/settings/payment-documents-settings.md
+      - Порядок работы:
+          - Авторизация: onec/workflow/index.md
+          - Документ Приёмо-сдаточный акт: onec/workflow/psa-document.md
+          - Приёмо-сдаточные акты: onec/workflow/psa-list.md
+      - Работа с документом ПСА:
+          - Работа с документом ПСА: onec/psa-document-work/index.md
+          - Выбор существующего ломосдатчика: onec/psa-document-work/psa-contractor-selection.md
+          - Создание нового ломосдатчика: onec/psa-document-work/psa-new-contractor.md
+          - Вкладка Доп. информация: onec/psa-document-work/psa-additional-info.md
+          - Вкладка Номенклатура: onec/psa-document-work/psa-nomenclature.md
+      - Документы Поступление/Приобретение: onec/receipt-documents.md
+      - Реестр ПСА в электронном виде: onec/psa-register-report.md
 
   - API:
-      - Обзор: api/index.md
-      - Auth: api/auth.md
-      - Companies: api/companies.md
-      - Payments: api/payments.md
-      - Limits: api/limits.md
+      - API: api/index.md
 
-  - FAQ: faq.md
+
+  - Терминал Centerm K9:
+      - Инструкция по работе с приложением: terminal/index.md
+      - Авторизация: terminal/login.md
+      - Главный экран: terminal/main-screen.md
+      - Оформление выплаты: terminal/payout.md
+      - Главное меню: terminal/main-menu.md
+
+  - Мобильное приложение:
+      - Общие сведения: mobile/index.md
+      - 1. Вход в систему: mobile/login.md
+      - 2. Пункты меню: mobile/menu.md
+      - 3. Реестр ПСА: mobile/psa-registry.md
+      - 4. Выплаты контрагентам: mobile/payouts.md
+      - 5. Справочники: mobile/directories.md
+      - 6. Аналитика: mobile/analytics.md
+      - 7. Профиль: mobile/profile.md
+      - 8. Уведомления: mobile/notifications.md
+      - 9. Помощь: mobile/help.md
+
+
 
 markdown_extensions:
   - admonition

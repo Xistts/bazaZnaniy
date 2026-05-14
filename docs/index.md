@@ -1,56 +1,93 @@
 # База знаний Алмаз
 
-Добро пожаловать в базу знаний проекта **Алмаз**.
+<div class="kb-intro" markdown>
 
-Здесь собраны инструкции по работе с веб-приложением, мобильным приложением, терминалом **Centerm K9**, модулем **1С** и API.
+**База знаний проекта «Алмаз-Онлайн»** — единый раздел с инструкциями по веб-приложению, мобильному приложению, терминалу **Centerm K9**, модулю **1С** и **API**.
 
----
+</div>
 
-## Разделы базы знаний
+## Разделы
 
-<div class="grid cards" markdown>
+<div class="grid cards kb-products kb-products--compact" markdown>
 
--   :material-monitor-dashboard:{ .lg .middle } **Веб-приложение**
+-   :material-monitor-dashboard:{ .kb-card-icon } <span class="kb-card-label">Веб</span>
 
-    ---
-
-    Инструкции по работе с веб-кабинетом: авторизация, реестры, организации, ПСА, шлюзы, лимиты и пользователи.
-
-    [:octicons-arrow-right-24: Перейти к разделу](web/introduction.md)
-
--   :material-cellphone:{ .lg .middle } **Мобильное приложение**
+    **Веб-приложение**
 
     ---
 
-    Инструкции по установке, авторизации, двухфакторной защите, обновлению приложения и работе с ПСА.
+    Авторизация, работа с ПСА, платёжными документами, организациями, шлюзами, лимитами, пользователями и настройками безопасности.
 
-    [:octicons-arrow-right-24: Перейти к разделу](mobile/index.md)
+    <span class="kb-chip">ПСА</span>
+    <span class="kb-chip">Шлюзы</span>
+    <span class="kb-chip">Лимиты</span>
 
--   :material-credit-card-wireless:{ .lg .middle } **Терминал Centerm K9**
+    [:octicons-arrow-right-24: Открыть раздел](web/index.md)
 
-    ---
+-   :material-cellphone:{ .kb-card-icon } <span class="kb-card-label">Android</span>
 
-    Настройка терминала, подключение, авторизация, работа с платежами, обновления и решение частых ошибок.
-
-    [:octicons-arrow-right-24: Перейти к разделу](terminal/index.md)
-
--   :material-file-cog:{ .lg .middle } **Модуль 1С**
+    **Мобильное приложение**
 
     ---
 
-    Установка и настройка модуля 1С, обмен данными, синхронизация, выгрузка документов и типовые ошибки.
+    Инструкции по входу, меню, реестру ПСА, оформлению выплат, справочникам, аналитике, профилю, уведомлениям и помощи.
 
-    [:octicons-arrow-right-24: Перейти к разделу](onec/index.md)
+    <span class="kb-chip">Mobile</span>
+    <span class="kb-chip">Выплаты</span>
+    <span class="kb-chip">Аналитика</span>
 
--   :material-cloud-braces:{ .lg .middle } **API**
+    [:octicons-arrow-right-24: Открыть раздел](mobile/index.md)
+
+-   :material-credit-card-wireless:{ .kb-card-icon } <span class="kb-card-label">POS</span>
+
+    **Терминал Centerm K9**
 
     ---
 
-    Описание методов API, авторизации, запросов, ответов, ошибок и интеграционных сценариев.
+    Работа с приложением на терминале: авторизация, главный экран, выплаты по карте и СБП, чеки, история и настройки.
 
-    [:octicons-arrow-right-24: Перейти к разделу](api/index.md)
+    <span class="kb-chip">Centerm K9</span>
+    <span class="kb-chip">СБП</span>
+    <span class="kb-chip">Чеки</span>
+
+    [:octicons-arrow-right-24: Открыть раздел](terminal/index.md)
+
+-   :material-file-cog:{ .kb-card-icon } <span class="kb-card-label">1С</span>
+
+    **Модуль 1С**
+
+    ---
+
+    Установка, настройка и использование модуля 1С: режимы работы, синхронизация, ПСА, поступления, оплаты и реестры.
+
+    <span class="kb-chip">1С</span>
+    <span class="kb-chip">Синхронизация</span>
+    <span class="kb-chip">ПСА</span>
+
+    [:octicons-arrow-right-24: Открыть раздел](onec/index.md)
+
+-   :material-cloud-braces:{ .kb-card-icon } <span class="kb-card-label">API</span>
+
+    **API**
+
+    ---
+
+    Методы API: авторизация, токены, шлюзы, баланс, документы, сканы, оплаты, статусы, лимиты и ключ идемпотентности.
+
+    <span class="kb-chip">REST</span>
+    <span class="kb-chip">JSON</span>
+    <span class="kb-chip">Интеграция</span>
+
+    [:octicons-arrow-right-24: Открыть раздел](api/index.md)
 
 </div>
 
 ---
 
+<div class="kb-note" markdown>
+
+### Как пользоваться базой знаний
+
+Выберите нужный раздел выше. Внутри каждого раздела инструкции сгруппированы по сценариям работы: вход, настройка, оформление документов, проведение выплат, справочники, безопасность и интеграции.
+
+</div>
